@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Super table</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://github.com/riklomas/quicksearch/raw/dev/jquery.quicksearch.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#id_search").quicksearch("table tbody tr", {
+					noResults: '#noresults',
+					stripeRows: ['odd', 'even'],
+					loader: 'span.loading'
+				});
+			});
+		</script>
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" title="" />
+
+	</head>
+
+	<body id="tools">
+	
+		<form action="#">
+			<fieldset>
+				<input type="text" name="search" value="" id="id_search" /> <span class="loading">Loading...</span>
+			</fieldset>
+		</form>	
+		
+
+<table id="matrix" cellpadding="0" cellspacing="0">
+<thead>
+<tr>
+<th width="75%">Fluid</th>
+<th width="5%">FKM</th>
+<th width="5%">EPDM</th>
+<th width="5%">NBR</th>
+<th width="5%">VMQ</th>
+<th width="5%">FVMQ</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+	<tr id="noresults">
+		<td colspan="6">No Results</td>
+	</tr>
+	
+<tr>
+<th>Abietic Acid</th>
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+<td>*</td>
+
+<td>*</td>
+</tr>
+
+<tr>
+<th>Acetaldehyde</th>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+
+<td>2</td>
+<td>4</td>
+
+</tr>
+
+<tr>
+<th>Acetamide</th>
+<td>3 </td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+
+<td>1</td>
+</tr>
+
+
+</tbody>
+</table>
+	</body>
+</html>
+
